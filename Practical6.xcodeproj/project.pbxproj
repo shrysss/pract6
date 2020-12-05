@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4826255ED45D3058F58ED2C1 /* Pods_Practical6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1189AD41B3BF9F0CA6720213 /* Pods_Practical6.framework */; };
 		E65FD7522578737F00A8EAF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65FD7512578737F00A8EAF7 /* AppDelegate.swift */; };
 		E65FD7542578737F00A8EAF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65FD7532578737F00A8EAF7 /* SceneDelegate.swift */; };
 		E65FD7562578737F00A8EAF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65FD7552578737F00A8EAF7 /* ViewController.swift */; };
 		E65FD7592578737F00A8EAF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65FD7572578737F00A8EAF7 /* Main.storyboard */; };
 		E65FD75B2578738200A8EAF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E65FD75A2578738200A8EAF7 /* Assets.xcassets */; };
 		E65FD75E2578738200A8EAF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65FD75C2578738200A8EAF7 /* LaunchScreen.storyboard */; };
+		E65FD76C25789A2600A8EAF7 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65FD76B25789A2600A8EAF7 /* QRViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0674FADD9FAF1861F360AD6C /* Pods-Practical6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practical6.release.xcconfig"; path = "Target Support Files/Pods-Practical6/Pods-Practical6.release.xcconfig"; sourceTree = "<group>"; };
+		1189AD41B3BF9F0CA6720213 /* Pods_Practical6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practical6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AC0CCF050693A88412A3112 /* Pods-Practical6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practical6.debug.xcconfig"; path = "Target Support Files/Pods-Practical6/Pods-Practical6.debug.xcconfig"; sourceTree = "<group>"; };
 		E65FD74E2578737F00A8EAF7 /* Practical6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practical6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65FD7512578737F00A8EAF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E65FD7532578737F00A8EAF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		E65FD75A2578738200A8EAF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E65FD75D2578738200A8EAF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E65FD75F2578738200A8EAF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E65FD76B25789A2600A8EAF7 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4826255ED45D3058F58ED2C1 /* Pods_Practical6.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		863673604A1DF07301FC2096 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1189AD41B3BF9F0CA6720213 /* Pods_Practical6.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC5BBB30EE0C408BEF6205A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AC0CCF050693A88412A3112 /* Pods-Practical6.debug.xcconfig */,
+				0674FADD9FAF1861F360AD6C /* Pods-Practical6.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E65FD7452578737F00A8EAF7 = {
 			isa = PBXGroup;
 			children = (
 				E65FD7502578737F00A8EAF7 /* Practical6 */,
 				E65FD74F2578737F00A8EAF7 /* Products */,
+				CC5BBB30EE0C408BEF6205A1 /* Pods */,
+				863673604A1DF07301FC2096 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +85,7 @@
 				E65FD7512578737F00A8EAF7 /* AppDelegate.swift */,
 				E65FD7532578737F00A8EAF7 /* SceneDelegate.swift */,
 				E65FD7552578737F00A8EAF7 /* ViewController.swift */,
+				E65FD76B25789A2600A8EAF7 /* QRViewController.swift */,
 				E65FD7572578737F00A8EAF7 /* Main.storyboard */,
 				E65FD75A2578738200A8EAF7 /* Assets.xcassets */,
 				E65FD75C2578738200A8EAF7 /* LaunchScreen.storyboard */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E65FD7622578738200A8EAF7 /* Build configuration list for PBXNativeTarget "Practical6" */;
 			buildPhases = (
+				A6027F024CBD665DFC7BB53B /* [CP] Check Pods Manifest.lock */,
 				E65FD74A2578737F00A8EAF7 /* Sources */,
 				E65FD74B2578737F00A8EAF7 /* Frameworks */,
 				E65FD74C2578737F00A8EAF7 /* Resources */,
+				4AEB75173F6934D06D651555 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4AEB75173F6934D06D651555 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Practical6/Pods-Practical6-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Practical6/Pods-Practical6-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Practical6/Pods-Practical6-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6027F024CBD665DFC7BB53B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Practical6-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E65FD74A2578737F00A8EAF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 				E65FD7562578737F00A8EAF7 /* ViewController.swift in Sources */,
 				E65FD7522578737F00A8EAF7 /* AppDelegate.swift in Sources */,
 				E65FD7542578737F00A8EAF7 /* SceneDelegate.swift in Sources */,
+				E65FD76C25789A2600A8EAF7 /* QRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +355,7 @@
 		};
 		E65FD7632578738200A8EAF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC0CCF050693A88412A3112 /* Pods-Practical6.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		E65FD7642578738200A8EAF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0674FADD9FAF1861F360AD6C /* Pods-Practical6.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
