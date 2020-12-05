@@ -22,8 +22,8 @@ class QRViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        txtFld.delegate = self
-        
+        self.txtFld.delegate = self
+    
         link = txtFld.text!
         
         QRImg.image = {
@@ -32,6 +32,8 @@ class QRViewController: UIViewController, UITextFieldDelegate {
             qr?.errorCorrection = .High
             return qr?.image
         }()
+        
+        
     }
     
     @IBAction func loadQR(_ sender: Any) {
@@ -45,18 +47,22 @@ class QRViewController: UIViewController, UITextFieldDelegate {
             return qr?.image
         }()
     }
-//    func txtReturn(_ textField: UITextField)->Bool {
-//        txtFld.resignFirstResponder()
-//        link = txtFld.text!
-//        QRImg.image = {
-//            var qr = QRCode(link)
-//            qr?.color = CIColor(rgba: "87004")
-//            qr?.size = self.QRImg.bounds.size
-//            qr?.errorCorrection = .High
-//            return qr?.image
-//        }()
-//        return true
-//    }
-//
+    
+    
+
+
+    func textFieldShouldReturn(_ txtField: UITextField) -> Bool {
+        txtFld.resignFirstResponder()
+        link = txtFld.text!
+        QRImg.image = {
+            var qr = QRCode(link)
+            qr?.color = CIColor(rgba: "87004")
+            qr?.size = self.QRImg.bounds.size
+            qr?.errorCorrection = .High
+            return qr?.image
+        }()
+        
+        return true
+    }
     
 }

@@ -15,6 +15,7 @@
 		E65FD75B2578738200A8EAF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E65FD75A2578738200A8EAF7 /* Assets.xcassets */; };
 		E65FD75E2578738200A8EAF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65FD75C2578738200A8EAF7 /* LaunchScreen.storyboard */; };
 		E65FD76C25789A2600A8EAF7 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65FD76B25789A2600A8EAF7 /* QRViewController.swift */; };
+		E65FD77B257BEBC000A8EAF7 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65FD77A257BEBC000A8EAF7 /* ScanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E65FD75D2578738200A8EAF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E65FD75F2578738200A8EAF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E65FD76B25789A2600A8EAF7 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		E65FD77A257BEBC000A8EAF7 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				E65FD75A2578738200A8EAF7 /* Assets.xcassets */,
 				E65FD75C2578738200A8EAF7 /* LaunchScreen.storyboard */,
 				E65FD75F2578738200A8EAF7 /* Info.plist */,
+				E65FD77A257BEBC000A8EAF7 /* ScanViewController.swift */,
 			);
 			path = Practical6;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				E65FD7562578737F00A8EAF7 /* ViewController.swift in Sources */,
 				E65FD7522578737F00A8EAF7 /* AppDelegate.swift in Sources */,
+				E65FD77B257BEBC000A8EAF7 /* ScanViewController.swift in Sources */,
 				E65FD7542578737F00A8EAF7 /* SceneDelegate.swift in Sources */,
 				E65FD76C25789A2600A8EAF7 /* QRViewController.swift in Sources */,
 			);
